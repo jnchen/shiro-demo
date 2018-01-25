@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:file:~/.h2/innerdb
+    username: sa
+    password: pass
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: h2
+  thymeleaf:
+    cache: false
+  h2:
+    console:
+      path: /console
+      enabled: true
+      settings:
+        web-allow-others: true
+server:
+  port: 8081
